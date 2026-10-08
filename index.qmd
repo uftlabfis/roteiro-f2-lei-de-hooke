@@ -1,5 +1,5 @@
 ---
-title: "Título do Roteiro"
+title: "Lei de Hooke"
 author:
   - name: "Laboratório de Física"
     affiliations: "Universidade Federal do Tocantins"
@@ -7,25 +7,25 @@ author:
 date: today
 columns: 2 # 👈 Mantido aqui (específico para a diagramação deste PDF)
 abstract: ""
-url: "https://github.com/uftlabfis"
+url: "https://uftlabfis.github.io/roteiro-f2-lei-de-hooke/"
 bibliography: assets/references/references.bib
 
 format:
   html: default
   uftlabfis-typst:
-    output-file: titulo-do-roteiro.pdf
+    output-file: lei-de-hooke.pdf
 
 other-links:
   - text: Roteiro do Experimento
-    href: titulo-do-roteiro.pdf
+    href: lei-de-hooke.pdf
     icon: file-earmark-pdf
     target: "_blank"
   - text: Papel milimetrado
     href: https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf
     icon: file-earmark-pdf
     target: "_blank"
-  - text: Outro roteiro
-    href: https://uftlabfis.pythonanywhere.com/file/02_mruv_v2020_01.pdf
+  - text: Roteiro do prof. Heverton
+    href: assets/alternatives/hooke-mhs-prof-heverton.pdf
     icon: file-earmark-pdf
     target: "_blank"
   # - text: Repositório no GitHub
@@ -43,45 +43,52 @@ other-links:
 ::: {.content-visible when-format="html"}
 ## Introdução
 
-Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.
-
-Conforme @Halliday1, *energia cinética* é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa ($m$) que se move com velocidade ($v$), a energia cinética é dada por
-
-$$
-K = \dfrac{1}{2} m v^2
-$$
-
-Utilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada. 
+Considere a situação mostrada na @fig-sistema-massa-mola, em que temos uma mola, fixa em uma extremidade. Na outra extremidade da mola, há uma massa $m$. No centro, o sistema está na posição de equilíbrio $x = 0$ e a mola não está nem comprimida nem alongada. Quando a mola é comprimida ($x<0$) ou alongada ($x>0$), surge uma força restauradora $\vec{F}$ orientada em sentido contrário à elongação, tendendo a retornar a massa à posição de equilíbrio [@Halliday2].
 
 
-::: {.content-visible when-format="html"}
-Por exemplo, a @fig-labfis-logo mostra o logo do Laboratório de Física.
+::: {#fig-sistema-massa-mola}
+![Força elástica em uma mola](assets/images/typst/sistema-massa-mola.svg)
 
-![Logo do Labfis](assets/images/labfis-logo-transparente.png){#fig-labfis-logo width=50%}
-
-<div style="text-align: center; font-size: smaller;">
+<div style="text-align: center;">
   **Fonte:** Labfis (2026)
 </div>
 :::
 
+O comportamento descrito acima é regido pela *lei de Hooke*,  segundo a qual a intensidade da força restauradora $F$ é diretamente proporcional à elongação $x$ sofrida pela mola, mas de sentido contrário, ou seja,
+
+
+$$
+  F = -k x
+$${#eq-lei-de-hooke}
+
+em que $k$ é a _constante elástica_ da mola (expressa em N/m).
+
+
+A lei de Hooke é válida dentro do limite de elasticidade da mola. Nesse regime, o gráfico do módulo da força $F$ em função da elongação $x$ é linear, e seu coeficiente angular corresponde à constante elástica $k$. 
+
+Neste experimento, massas previamente aferidas são adicionadas progressivamente à mola, e as respectivas elongações são medidas para determinar experimentalmente sua constante elástica e avaliar a linearidade do comportamento por meio da análise gráfica.
+
+
 ## Objetivos
 
-Apresente de forma clara e objetiva o que se pretende alcançar com a atividade experimental, utilizando verbos de ação como
-
-1. Investigar
-2. Analisar
-3. Determinar
-4. Verificar
-5. Compreender
+1. Determinar a constante elástica $k$ de uma mola helicoidal utilizando o método estático;
+2. Validar a linearidade da Lei de Hooke por meio da análise gráfica.
 
 ## Material necessário
 
-Liste todos os materiais, equipamentos e instrumentos que serão utilizados na atividade experimental, de forma organizada e objetiva.
+::: {#fig-aparato-experimental}
+![Aparato experimental](assets/images/typst/equipamento-massa-mola-2.svg)
 
-- Balança;
-- Cronômetro;
-- Paquímetro;
-- Trilho de baixo atrito.
+<div style="text-align: center;">
+  **Fonte:** Labfis (2026)
+</div>
+:::
+
+- Suporte universal e acessórios;
+- Mola helicoidal;
+- Massas acopláveis;
+- Balança digital;
+- Régua ou trena.
 
 ## Referências
 
@@ -98,88 +105,115 @@ Liste todos os materiais, equipamentos e instrumentos que serão utilizados na a
 
 = Introdução
 
-Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.
 
-Conforme #cite(<Halliday1>, form: "prose"), *energia cinética* é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa ($m$) que se move com velocidade ($v$), a energia cinética é dada por
+Considere a situação mostrada na @fig-sistema-massa-mola, em que temos uma mola, fixa em uma extremidade. Na outra extremidade da mola, há uma massa $m$. No centro, o sistema está na posição de equilíbrio $x = 0$ e a mola não está nem comprimida nem alongada. Quando a mola é comprimida ($x<0$) ou alongada ($x>0$), surge uma força restauradora $arrow(F)$ orientada em sentido contrário à elongação, tendendo a retornar a massa à posição de equilíbrio @Halliday2.
 
-$
-K = 1/2 m v^2
-$
-
-Utilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada. 
-
-
-Por exemplo, a @fig-labfis-logo mostra o logo do Laboratório de Física.
 
 #figure(
-  image("assets/images/labfis-logo-transparente.png", width: 50%),
-  caption: [Logo do Labfis]
-)<fig-labfis-logo>
+  image("assets/images/typst/sistema-massa-mola.svg", width: 75%),
+  caption: [Força elástica em uma mola]
+)<fig-sistema-massa-mola>
+
+O comportamento descrito acima é regido pela *lei de Hooke*,  segundo a qual a intensidade da força restauradora $F$ é diretamente proporcional à elongação $x$ sofrida pela mola, mas de sentido contrário, ou seja,
+
+
+$
+  F = -k x
+$<eq-lei-de-hooke>
+
+#par(first-line-indent: 0cm)[em que $k$ é a _constante elástica_ da mola (expressa em N/m).]
+
+A lei de Hooke é válida dentro do limite de elasticidade da mola. Nesse regime, o gráfico da força $F$ em função da elongação $x$ é linear, e seu coeficiente angular corresponde à constante elástica $k$. 
+
+Neste experimento, massas previamente aferidas são adicionadas progressivamente à mola, e as respectivas elongações são medidas para determinar experimentalmente sua constante elástica e avaliar a linearidade do comportamento por meio da análise gráfica.
+
+
+
 
 = Objetivos
 
-Apresente de forma clara e objetiva o que se pretende alcançar com a atividade experimental, utilizando verbos de ação como
-
-1. Investigar
-2. Analisar
-3. Determinar
-4. Verificar
-5. Compreender
++ Determinar a constante elástica $k$ de uma mola helicoidal utilizando o método estático;
++ Validar a linearidade da Lei de Hooke por meio da análise gráfica.
 
 = Material necessário
 
-Liste todos os materiais, equipamentos e instrumentos que serão utilizados na atividade experimental, de forma organizada e objetiva.
-
-- Balança;
-- Cronômetro;
-- Paquímetro;
-- Trilho de baixo atrito.
 
 
 
-#pagebreak()
+- Suporte universal e acessórios;
+- Mola helicoidal;
+- Massas acopláveis;
+- Balança digital;
+- Régua ou trena.
+
+
+#figure(
+  image("assets/images/typst/equipamento-massa-mola-2.svg", width: 80%),
+  caption: [Aparato experimental]
+)<fig-aparato-experimental>
+
+
+
 
 = Procedimentos
 
-Descreva, em ordem lógica e de forma clara e objetiva, as etapas necessárias para a realização do experimento, incluindo a montagem, as medições e os cuidados relevantes durante a execução. Sempre que póssível, inclua uma tabela de coleta de dados, como a @tab-coleta-dados.
++ Identifique e numere as 10 anilhas. Meça suas massas $m_1$ a $m_(10)$ com a balança digital e registre os valores, em gramas (g), na @tbl-coleta-dados.
++ Monte o suporte universal com a mola na vertical e acople o porta-pesos vazio à sua extremidade inferior.
++ Após o sistema (mola + suporte porta-pesos) atingir o repouso, registre a leitura inicial $l_0$ na escala da régua. Essa leitura inclui a elongação causada pelo porta-pesos (veja @fig-aparato-experimental(a)).
++ Adicione progressivamente as anilhas, na ordem de numeração.
++ Após cada adição, aguarde o sistema atingir o repouso e registre a leitura $l_i$ da escala, conforme @fig-aparato-experimental(b).
++ Calcule a elongação da mola por
+  $x_i = l_i - l_0$.
++ Para cada etapa, calcule a massa acumulada
+  $M_i = sum_(j=1)^i m_j$,
+  converta-a para quilogramas e determine a força peso
+  $F_i = M_i g$.
 
-#figure(
-  kind: table,
-  caption: [Coleta de dados],
-)[
-  #table(
-    columns: (1fr, 1fr, 1fr),
-    table.header([Coluna1], [Coluna2], [Coluna3]),
-    [1], [], [],
-    [2], [], [],
-    [3], [], [],
-    [4], [], [],
-    table.cell(colspan: 2)[*Média*]
-  )
-]<tab-coleta-dados>
-
-== Primeira parte
-
-1. Passo 1
-2. Passo 2
-3. Passo 3
-4. Passo 4
-
-== Segunda parte
-
-1. Passo 1
-2. Passo 2
-3. Passo 3
-4. Passo 4
-5. Passo 5
 
 
 = Resultados
 
-Apresente e organize os dados obtidos no experimento, utilizando tabelas, gráficos, cálculos e outras formas de representação que permitam analisar e interpretar os resultados.
++ Construa o gráfico do módulo da $F$ (eixo vertical) em função da elongação $x$ (eixo horizontal).
++ Trace a reta de ajuste linear dos pontos experimentais; o coeficiente angular dessa reta fornecerá o valor da constante elástica $k$ da mola.
++ Avalie a linearidade do gráfico obtido por meio, por exemplo, do coeficiente de determinação ($R^2$). Caso o valor de $R^2$ seja próximo de 1, a proporcionalidade direta da Lei de Hooke está validada para o intervalo testado. Discuta os resultados.
+
 
 #set heading(numbering: none)
 = Referências
 
 #bibliography("assets/references/references.bib", style: "assets/references/abnt.csl", title: none)
+
+#set table(
+  align: center+top
+)
+
+
+#place(
+  bottom,
+  float: true,
+  scope: "parent", 
+  clearance: 1.5em
+)[
+  #figure(
+    kind: table,
+    caption: [Coleta de dados],
+  )[
+    #table(
+      columns: (0.6fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+      table.header([Etapa], [$m_i$ (g)], [$M_i$ (kg)], [$l_i$ (m)], [$x$ (m)], [$F$ (N)]),
+      [$0$], [$-$], [$-$], [], [$-$], [$-$],
+      [$1$], [], [], [], [], [],
+      [$2$], [], [], [], [], [],
+      [$3$], [], [], [], [], [],
+      [$4$], [], [], [], [], [],
+      [$5$], [], [], [], [], [],
+      [$6$], [], [], [], [], [],
+      [$7$], [], [], [], [], [],
+      [$8$], [], [], [], [], [],
+      [$9$], [], [], [], [], [],
+      [$10$], [], [], [], [], [],
+      //table.cell(colspan: 2)[*Média*]
+    )
+  ]<tbl-coleta-dados>
+]
 ```

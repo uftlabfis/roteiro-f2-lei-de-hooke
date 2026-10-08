@@ -2,36 +2,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Título do Roteiro",
+    "title": "Lei de Hooke",
     "section": "",
-    "text": "Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.\nConforme Halliday; Resnick; Walker (2016), energia cinética é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa (\\(m\\)) que se move com velocidade (\\(v\\)), a energia cinética é dada por\n\\[\nK = \\dfrac{1}{2} m v^2\n\\]\nUtilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada.\nPor exemplo, a Figura 1 mostra o logo do Laboratório de Física.\n\n\n\nFigura 1: Logo do Labfis\n\n\n\n\n\n\n\nFonte: Labfis (2026)"
+    "text": "Considere a situação mostrada na Figura 1, em que temos uma mola, fixa em uma extremidade. Na outra extremidade da mola, há uma massa \\(m\\). No centro, o sistema está na posição de equilíbrio \\(x = 0\\) e a mola não está nem comprimida nem alongada. Quando a mola é comprimida (\\(x&lt;0\\)) ou alongada (\\(x&gt;0\\)), surge uma força restauradora \\(\\vec{F}\\) orientada em sentido contrário à elongação, tendendo a retornar a massa à posição de equilíbrio (Halliday; Resnick; Walker, 2016).\n\n\n\nFigura 1\n\n\n\n\nForça elástica em uma mola\n\n\n\n\nFonte: Labfis (2026)\n\n\n\n\nO comportamento descrito acima é regido pela lei de Hooke, segundo a qual a intensidade da força restauradora \\(F\\) é diretamente proporcional à elongação \\(x\\) sofrida pela mola, mas de sentido contrário, ou seja,\n\\[\n  F = -k x\n\\tag{1}\\]\nem que \\(k\\) é a constante elástica da mola (expressa em N/m).\nA lei de Hooke é válida dentro do limite de elasticidade da mola. Nesse regime, o gráfico do módulo da força \\(F\\) em função da elongação \\(x\\) é linear, e seu coeficiente angular corresponde à constante elástica \\(k\\).\nNeste experimento, massas previamente aferidas são adicionadas progressivamente à mola, e as respectivas elongações são medidas para determinar experimentalmente sua constante elástica e avaliar a linearidade do comportamento por meio da análise gráfica."
   },
   {
     "objectID": "index.html#introdução",
     "href": "index.html#introdução",
-    "title": "Título do Roteiro",
+    "title": "Lei de Hooke",
     "section": "",
-    "text": "Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.\nConforme Halliday; Resnick; Walker (2016), energia cinética é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa (\\(m\\)) que se move com velocidade (\\(v\\)), a energia cinética é dada por\n\\[\nK = \\dfrac{1}{2} m v^2\n\\]\nUtilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada.\nPor exemplo, a Figura 1 mostra o logo do Laboratório de Física.\n\n\n\nFigura 1: Logo do Labfis\n\n\n\n\n\n\n\nFonte: Labfis (2026)"
+    "text": "Considere a situação mostrada na Figura 1, em que temos uma mola, fixa em uma extremidade. Na outra extremidade da mola, há uma massa \\(m\\). No centro, o sistema está na posição de equilíbrio \\(x = 0\\) e a mola não está nem comprimida nem alongada. Quando a mola é comprimida (\\(x&lt;0\\)) ou alongada (\\(x&gt;0\\)), surge uma força restauradora \\(\\vec{F}\\) orientada em sentido contrário à elongação, tendendo a retornar a massa à posição de equilíbrio (Halliday; Resnick; Walker, 2016).\n\n\n\nFigura 1\n\n\n\n\nForça elástica em uma mola\n\n\n\n\nFonte: Labfis (2026)\n\n\n\n\nO comportamento descrito acima é regido pela lei de Hooke, segundo a qual a intensidade da força restauradora \\(F\\) é diretamente proporcional à elongação \\(x\\) sofrida pela mola, mas de sentido contrário, ou seja,\n\\[\n  F = -k x\n\\tag{1}\\]\nem que \\(k\\) é a constante elástica da mola (expressa em N/m).\nA lei de Hooke é válida dentro do limite de elasticidade da mola. Nesse regime, o gráfico do módulo da força \\(F\\) em função da elongação \\(x\\) é linear, e seu coeficiente angular corresponde à constante elástica \\(k\\).\nNeste experimento, massas previamente aferidas são adicionadas progressivamente à mola, e as respectivas elongações são medidas para determinar experimentalmente sua constante elástica e avaliar a linearidade do comportamento por meio da análise gráfica."
   },
   {
     "objectID": "index.html#objetivos",
     "href": "index.html#objetivos",
-    "title": "Título do Roteiro",
+    "title": "Lei de Hooke",
     "section": "Objetivos",
-    "text": "Objetivos\nApresente de forma clara e objetiva o que se pretende alcançar com a atividade experimental, utilizando verbos de ação como\n\nInvestigar\nAnalisar\nDeterminar\nVerificar\nCompreender"
+    "text": "Objetivos\n\nDeterminar a constante elástica \\(k\\) de uma mola helicoidal utilizando o método estático;\nValidar a linearidade da Lei de Hooke por meio da análise gráfica."
   },
   {
     "objectID": "index.html#material-necessário",
     "href": "index.html#material-necessário",
-    "title": "Título do Roteiro",
+    "title": "Lei de Hooke",
     "section": "Material necessário",
-    "text": "Material necessário\nListe todos os materiais, equipamentos e instrumentos que serão utilizados na atividade experimental, de forma organizada e objetiva.\n\nBalança;\nCronômetro;\nPaquímetro;\nTrilho de baixo atrito."
+    "text": "Material necessário\n\n\n\nFigura 2\n\n\n\n\nAparato experimental\n\n\n\n\nFonte: Labfis (2026)\n\n\n\n\n\nSuporte universal e acessórios;\nMola helicoidal;\nMassas acopláveis;\nBalança digital;\nRégua ou trena."
   },
   {
     "objectID": "index.html#referências",
     "href": "index.html#referências",
-    "title": "Título do Roteiro",
+    "title": "Lei de Hooke",
     "section": "Referências",
-    "text": "Referências\n\n\nHALLIDAY, D.; RESNICK, R.; WALKER, J. Fundamentos de Física: Mecânica. 10. ed. Rio de Janeiro: LTC, 2016. v. 1"
+    "text": "Referências\n\n\nHALLIDAY, D.; RESNICK, R.; WALKER, J. Fundamentos de Física: Gravitação, Ondas e Termodinâmica. 10. ed. Rio de Janeiro: LTC, 2016. v. 2"
   }
 ]

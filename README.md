@@ -1,38 +1,62 @@
-# Template de Roteiro Experimental — LABFIS/UFT
+# Roteiro Experimental — Lei de Hooke
 
-> 🌐 **Acesse a versão web do roteiro:** [https://costandrad.github.io/uftlabfis-roteiro-web-template/](https://costandrad.github.io/uftlabfis-roteiro-web-template/)
+<p align="center">
+  <a href="https://uftlabfis.github.io/roteiro-f2-lei-de-hooke/" style="display:inline-block;padding:10px 20px;background-color:#004A80;color:white;text-decoration:none;border-radius:6px;font-weight:bold;">
+    🌐 Acesse a versão web do roteiro
+  </a>
+</p>
 
-Este repositório contém o template em **Quarto Markdown (`.qmd`)** desenvolvido para a padronização, formatação e publicação web dos roteiros de atividades experimentais do **Laboratório de Física (LABFIS)** do Câmpus Universitário de Palmas, da Universidade Federal do Tocantins (UFT).
+Este repositório contém o roteiro da atividade experimental **Lei de Hooke**, desenvolvido pelo **Laboratório de Física (LABFIS)** do Câmpus Universitário de Palmas, da **Universidade Federal do Tocantins (UFT)**.
 
----
-
-## 🎨 Identidade Visual e Estilo
-
-O template utiliza a paleta de cores oficial extraída da marca do **LABFIS/UFT**:
-
-* **Azul Petróleo (`#004A80`):** Aplicado aos títulos de seções principais (`h1`, `h2`, `h3`).
-* **Verde Esmeralda (`#008577`):** Aplicado aos links e elementos de destaque interativos.
-* **Dourado (`#FDB913`) / Cinza (`#666666`):** Utilizados em detalhes estruturais e bordas.
-* **Tipografia e Texto:** Texto dos parágrafos justificado com hifenização automática para melhor leitura digital.
+A atividade aborda a relação entre a força aplicada a uma mola e sua elongação, permitindo determinar experimentalmente a **constante elástica da mola** e verificar a linearidade da **Lei de Hooke** por meio da análise gráfica.
 
 ---
 
-## 🧩 Extensão Quarto (`uftlabfis`)
+## 🔬 Experimento
 
-Para a geração dos documentos em PDF, foi desenvolvida a extensão customizada **`uftlabfis`**. Ela utiliza o **Typst** como motor de renderização, garantindo uma compilação ultra-rápida, diagramação acadêmica moderna e alinhamento total à identidade visual do laboratório na versão impressa.
+O experimento utiliza uma mola helicoidal submetida a massas progressivamente maiores. Para cada configuração, são determinadas a massa acumulada, a força peso e a elongação da mola.
+
+A partir dos dados experimentais, constrói-se o gráfico da força em função da elongação e determina-se a constante elástica $k$ pelo coeficiente angular da reta de ajuste.
+
+---
+
+## 🧩 Estrutura do Roteiro
+
+O roteiro contempla:
+
+* Introdução teórica sobre a Lei de Hooke e a força restauradora;
+* Determinação experimental da constante elástica de uma mola pelo método estático;
+* Procedimentos para coleta e organização dos dados;
+* Análise gráfica da relação entre força e elongação;
+* Avaliação da linearidade por meio do coeficiente de determinação ($R^2$).
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* [Quarto CLI](https://quarto.org/) — Gerador de documentos e sites estáticos.
-* **Typst** — Sistema de tipografia moderno para customização e renderização do formato PDF via extensão `uftlabfis`.
-* **HTML5 / CSS3** — Customização de layout web, regras de acessibilidade e remoção de sublinhados em links de imagem.
-* **LaTeX** — Renderização de equações e fórmulas físicas.
+O roteiro é desenvolvido em **Quarto Markdown (`.qmd`)**, permitindo a geração de versões para publicação na web e em PDF.
+
+* [Quarto CLI](https://quarto.org/) — geração dos documentos e da versão web;
+* **Typst** — composição e renderização do PDF;
+* **HTML5 / CSS3** — estrutura, apresentação e personalização da versão web;
+* **LaTeX** — notação e renderização de equações matemáticas.
+
+---
+
+## 🎨 Identidade Visual
+
+O roteiro segue a identidade visual do **LABFIS/UFT**, utilizando:
+
+* **Azul Petróleo (`#004A80`)** — títulos e elementos estruturais;
+* **Verde Esmeralda (`#008577`)** — links e elementos de destaque;
+* **Dourado (`#FDB913`)** e **Cinza (`#666666`)** — detalhes e elementos complementares.
+
+O texto da versão web utiliza alinhamento justificado e hifenização automática para favorecer a legibilidade.
 
 ---
 
 ## 👥 Créditos e Autoria
 
-* **Conteúdo Acadêmico:** Equipe Técnica do LABFIS
-* **Desenvolvedor:** [Igo da Costa Andrade](https://github.com/costandrad) (2026)
+* **Conteúdo acadêmico:** Laboratório de Física (LABFIS/UFT)
+* **Desenvolvimento e diagramação:** [Igo da Costa Andrade](https://github.com/costandrad)
+* **Ano:** 2026

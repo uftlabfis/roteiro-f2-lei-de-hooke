@@ -8,7 +8,7 @@
 
 <meta name="author" content="Laboratório de Física">
 
-<title>Título do Roteiro</title>
+<title>Lei de Hooke</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -64,7 +64,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6ac2aec46ad7f46b16024ee4409aa65c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -135,13 +135,13 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <div class="quarto-other-links"><h2>Baixar Material</h2><ul><li><a href="titulo-do-roteiro.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do Experimento</a></li><li><a href="https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Papel milimetrado</a></li><li><a href="https://uftlabfis.pythonanywhere.com/file/02_mruv_v2020_01.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Outro roteiro</a></li></ul></div></div>
+    <div class="quarto-other-links"><h2>Baixar Material</h2><ul><li><a href="lei-de-hooke.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do Experimento</a></li><li><a href="https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Papel milimetrado</a></li><li><a href="assets/alternatives/hooke-mhs-prof-heverton.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do prof. Heverton</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Título do Roteiro</h1>
+<h1 class="title">Lei de Hooke</h1>
 </div>
 
 
@@ -165,7 +165,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Última atualização</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">15 de setembro de 2026</p>
+      <p class="date">8 de outubro de 2026</p>
     </div>
   </div>
   
@@ -179,53 +179,73 @@ window.Quarto = {
 
 <section id="introdução" class="level2">
 <h2 data-anchor-id="introdução">Introdução</h2>
-<p>Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.</p>
-<p>Conforme <span class="citation" data-cites="Halliday1">Halliday; Resnick; Walker (<a href="#ref-Halliday1" role="doc-biblioref">2016</a>)</span>, <em>energia cinética</em> é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa (<span class="math inline">\(m\)</span>) que se move com velocidade (<span class="math inline">\(v\)</span>), a energia cinética é dada por</p>
-<p><span class="math display">\[
-K = \dfrac{1}{2} m v^2
-\]</span></p>
-<p>Utilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada.</p>
-<p>Por exemplo, a <a href="#fig-labfis-logo" class="quarto-xref">Figura&nbsp;1</a> mostra o logo do Laboratório de Física.</p>
-<div id="fig-labfis-logo" class="quarto-float quarto-figure quarto-figure-center">
+<p>Considere a situação mostrada na <a href="#fig-sistema-massa-mola" class="quarto-xref">Figura&nbsp;1</a>, em que temos uma mola, fixa em uma extremidade. Na outra extremidade da mola, há uma massa <span class="math inline">\(m\)</span>. No centro, o sistema está na posição de equilíbrio <span class="math inline">\(x = 0\)</span> e a mola não está nem comprimida nem alongada. Quando a mola é comprimida (<span class="math inline">\(x&lt;0\)</span>) ou alongada (<span class="math inline">\(x&gt;0\)</span>), surge uma força restauradora <span class="math inline">\(\vec{F}\)</span> orientada em sentido contrário à elongação, tendendo a retornar a massa à posição de equilíbrio <span class="citation" data-cites="Halliday2">(<a href="#ref-Halliday2" role="doc-biblioref">Halliday; Resnick; Walker, 2016</a>)</span>.</p>
+<div id="fig-sistema-massa-mola" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-labfis-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;1: Logo do Labfis
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-sistema-massa-mola-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1
 </figcaption>
-<div aria-describedby="fig-labfis-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="assets/images/labfis-logo-transparente.png" class="img-fluid figure-img" style="width:50.0%">
+<div aria-describedby="fig-sistema-massa-mola-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Força elástica em uma mola</figcaption>
+<p><img src="assets/images/typst/sistema-massa-mola.svg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<div style="text-align: center;">
+<p><strong>Fonte:</strong> Labfis (2026)</p>
+</div>
 </div>
 </figure>
 </div>
-<div style="text-align: center; font-size: smaller;">
-<p><strong>Fonte:</strong> Labfis (2026)</p>
-</div>
+<p>O comportamento descrito acima é regido pela <em>lei de Hooke</em>, segundo a qual a intensidade da força restauradora <span class="math inline">\(F\)</span> é diretamente proporcional à elongação <span class="math inline">\(x\)</span> sofrida pela mola, mas de sentido contrário, ou seja,</p>
+<p><span id="eq-lei-de-hooke"><span class="math display">\[
+  F = -k x
+\tag{1}\]</span></span></p>
+<p>em que <span class="math inline">\(k\)</span> é a <em>constante elástica</em> da mola (expressa em N/m).</p>
+<p>A lei de Hooke é válida dentro do limite de elasticidade da mola. Nesse regime, o gráfico do módulo da força <span class="math inline">\(F\)</span> em função da elongação <span class="math inline">\(x\)</span> é linear, e seu coeficiente angular corresponde à constante elástica <span class="math inline">\(k\)</span>.</p>
+<p>Neste experimento, massas previamente aferidas são adicionadas progressivamente à mola, e as respectivas elongações são medidas para determinar experimentalmente sua constante elástica e avaliar a linearidade do comportamento por meio da análise gráfica.</p>
 </section>
 <section id="objetivos" class="level2">
 <h2 data-anchor-id="objetivos">Objetivos</h2>
-<p>Apresente de forma clara e objetiva o que se pretende alcançar com a atividade experimental, utilizando verbos de ação como</p>
 <ol type="1">
-<li>Investigar</li>
-<li>Analisar</li>
-<li>Determinar</li>
-<li>Verificar</li>
-<li>Compreender</li>
+<li>Determinar a constante elástica <span class="math inline">\(k\)</span> de uma mola helicoidal utilizando o método estático;</li>
+<li>Validar a linearidade da Lei de Hooke por meio da análise gráfica.</li>
 </ol>
 </section>
 <section id="material-necessário" class="level2">
 <h2 data-anchor-id="material-necessário">Material necessário</h2>
-<p>Liste todos os materiais, equipamentos e instrumentos que serão utilizados na atividade experimental, de forma organizada e objetiva.</p>
+<div id="fig-aparato-experimental" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-aparato-experimental-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2
+</figcaption>
+<div aria-describedby="fig-aparato-experimental-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Aparato experimental</figcaption>
+<p><img src="assets/images/typst/equipamento-massa-mola-2.svg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<div style="text-align: center;">
+<p><strong>Fonte:</strong> Labfis (2026)</p>
+</div>
+</div>
+</figure>
+</div>
 <ul>
-<li>Balança;</li>
-<li>Cronômetro;</li>
-<li>Paquímetro;</li>
-<li>Trilho de baixo atrito.</li>
+<li>Suporte universal e acessórios;</li>
+<li>Mola helicoidal;</li>
+<li>Massas acopláveis;</li>
+<li>Balança digital;</li>
+<li>Régua ou trena.</li>
 </ul>
 </section>
 <section id="referências" class="level2">
 <h2 data-anchor-id="referências">Referências</h2>
 <div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list">
-<div id="ref-Halliday1" class="csl-entry" role="listitem">
-HALLIDAY, D.; RESNICK, R.; WALKER, J. <strong>Fundamentos de Física: Mecânica</strong>. 10. ed. Rio de Janeiro: LTC, 2016. v. 1
+<div id="ref-Halliday2" class="csl-entry" role="listitem">
+HALLIDAY, D.; RESNICK, R.; WALKER, J. <strong>Fundamentos de Física: Gravitação, Ondas e Termodinâmica</strong>. 10. ed. Rio de Janeiro: LTC, 2016. v. 2
 </div>
 </div>
 
@@ -299,7 +319,7 @@ HALLIDAY, D.; RESNICK, R.; WALKER, J. <strong>Fundamentos de Física: Mecânica<
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/costandrad\.github\.io\/uftlabfis-roteiro-web-template\/");
+        var filterRegex = new RegExp("https:\/\/uftlabfis\.github\.io\/roteiro-f2-lei-de-hooke\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
