@@ -253,7 +253,7 @@
     // Marcação de leitura
     // =========================
 
-    let y_leitura = massa_y
+    let y_leitura = y_porta + 0.5*e//massa_y
 
     line(
       (
