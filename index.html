@@ -179,7 +179,7 @@ window.Quarto = {
 
 <section id="introdução" class="level2">
 <h2 data-anchor-id="introdução">Introdução</h2>
-<p>Considere a situação mostrada na <a href="#fig-sistema-massa-mola" class="quarto-xref">Figura&nbsp;1</a>, em que temos um a mola, fixa em uma extremidade. Na outra extremidada da mola, há uma massa <span class="math inline">\(m\)</span>. Ao centro, o sistema está na posição de equilíbrio <span class="math inline">\(x = 0\)</span> e a mola não está nem comprimida nem alongada. À esquerda, a mola está comprimida para uma posição negativa (<span class="math inline">\(x &lt; 0\)</span>). Nesse caso, surge uma força <span class="math inline">\(\vec{F}\)</span> orientada para baixo. À direita, quando a mola é esticada para uma posição positiva (<span class="math inline">\(x &gt; 0\)</span>), a força <span class="math inline">\(\vec{F}\)</span> atua em sentido oposto, apontando para cima. Dizemos que a força <span class="math inline">\(F\)</span> é uma força <em>restauradora</em>, pois atua para retornar a massa <span class="math inline">\(m\)</span> à posição de equilíbrio<span class="citation" data-cites="Halliday2">(<a href="#ref-Halliday2" role="doc-biblioref">Halliday; Resnick; Walker, 2016</a>)</span>.</p>
+<p>Considere a situação mostrada na <a href="#fig-sistema-massa-mola" class="quarto-xref">Figura&nbsp;1</a>, em que temos uma mola, fixa em uma extremidade. Na outra extremidade da mola, há uma massa <span class="math inline">\(m\)</span>. No centro, o sistema está na posição de equilíbrio <span class="math inline">\(x = 0\)</span> e a mola não está nem comprimida nem alongada. Quando a mola é comprimida (<span class="math inline">\(x&lt;0\)</span>) ou alongada (<span class="math inline">\(x&gt;0\)</span>), surge uma força restauradora <span class="math inline">\(\vec{F}\)</span> orientada em sentido contrário à elongação, tendendo a retornar a massa à posição de equilíbrio <span class="citation" data-cites="Halliday2">(<a href="#ref-Halliday2" role="doc-biblioref">Halliday; Resnick; Walker, 2016</a>)</span>.</p>
 <div id="fig-sistema-massa-mola" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-sistema-massa-mola-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -198,17 +198,12 @@ Figura&nbsp;1
 </div>
 </figure>
 </div>
-<p>O comportamento da mola descrito acima é regido pela <em>lei de Hooke</em>, que estabelece que a intensidade dessa força restauradora é diretamente proporcional à deformação sofrida pela mola, sendo descrita matematicamente pela equação</p>
+<p>O comportamento descrito acima é regido pela <em>lei de Hooke</em>, segundo a qual a intensidade da força restauradora <span class="math inline">\(F\)</span> é diretamente proporcional à elongação <span class="math inline">\(x\)</span> sofrida pela mola, mas de sentido contrário, ou seja,</p>
 <p><span id="eq-lei-de-hooke"><span class="math display">\[
   F = -k x
 \tag{1}\]</span></span></p>
-<p>em que:</p>
-<ul>
-<li><span class="math inline">\(F\)</span> é a força aplicada que tensiona a mola;</li>
-<li><span class="math inline">\(k\)</span> é a <em>constante elástica</em> da mola (expressa em N/m);</li>
-<li><span class="math inline">\(x\)</span> é a deformação sofrida pela mola em relação à posição de equilíbrio.</li>
-</ul>
-<p>A lei de Hooke é válida dentro do limite de elasticidade da mola. Nesse regime, o gráfico da força <span class="math inline">\(F\)</span> em função da elongação <span class="math inline">\(x\)</span> é linear, e seu coeficiente angular corresponde à constante elástica <span class="math inline">\(k\)</span>. Neste experimento, massas previamente aferidas são adicionadas progressivamente à mola, e as respectivas elongações são medidas para determinar experimentalmente sua rigidez e avaliar o comportamento elástico por meio da análise gráfica.</p>
+<p>em que <span class="math inline">\(k\)</span> é a <em>constante elástica</em> da mola (expressa em N/m).</p>
+<p>A lei de Hooke é válida dentro do limite de elasticidade da mola. Nesse regime, o gráfico do módulo da força <span class="math inline">\(F\)</span> em função da elongação <span class="math inline">\(x\)</span> é linear, e seu coeficiente angular corresponde à constante elástica <span class="math inline">\(k\)</span>. Neste experimento, massas previamente aferidas são adicionadas progressivamente à mola, e as respectivas elongações são medidas para determinar experimentalmente sua rigidez e avaliar o comportamento elástico por meio da análise gráfica.</p>
 </section>
 <section id="objetivos" class="level2">
 <h2 data-anchor-id="objetivos">Objetivos</h2>
@@ -239,7 +234,7 @@ Figura&nbsp;2
 </div>
 <ul>
 <li>Suporte universal e acessórios;</li>
-<li>Mola helocoidal;</li>
+<li>Mola helicoidal;</li>
 <li>Massas acopláveis;</li>
 <li>Balança digital;</li>
 <li>Régua ou trena.</li>
@@ -323,7 +318,7 @@ HALLIDAY, D.; RESNICK, R.; WALKER, J. <strong>Fundamentos de Física: Gravitaç�
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/uftlabfis\.github\.io\/roteiro-f2-lei-de-hooke\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
