@@ -1,10 +1,6 @@
 # Roteiro Experimental — Lei de Hooke
 
-<p align="center">
-  <a href="https://uftlabfis.github.io/roteiro-f2-lei-de-hooke/" style="display:inline-block;padding:10px 20px;background-color:#004A80;color:white;text-decoration:none;border-radius:6px;font-weight:bold;">
-    🌐 Acesse a versão web do roteiro
-  </a>
-</p>
+<p align="center"> <a href="https://uftlabfis.github.io/roteiro-f2-lei-de-hooke/"> <img src="https://img.shields.io/badge/🌐%20Acesse%20a%20versão%20web%20do%20roteiro-004A80?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Acesse a versão web do roteiro"> </a> </p>
 
 Este repositório contém o roteiro da atividade experimental **Lei de Hooke**, desenvolvido pelo **Laboratório de Física (LABFIS)** do Câmpus Universitário de Palmas, da **Universidade Federal do Tocantins (UFT)**.
 
